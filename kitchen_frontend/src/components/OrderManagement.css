@@ -1,0 +1,177 @@
+/* OrderManagement.css */
+
+/* Main container styles */
+.order-management-container {
+  background-color: #f9f9f9;
+  color: #f0f0f0;
+  min-height: 100vh;
+ 
+}
+
+/* Page title */
+.page-title {
+  color: #000000; /* Orange color */
+  font-weight: bold;
+  border-bottom: 2px solid #ff8c00;
+  padding-bottom: 10px;
+}
+
+/* Custom table styles */
+.custom-table {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+.custom-table thead {
+  background-color: #222;
+}
+
+.custom-table thead th {
+  color: #ff8c00;
+  border-color: #444;
+}
+
+.custom-table tbody tr {
+  border-color: #444;
+}
+
+.custom-table tbody tr:nth-of-type(odd) {
+  background-color: #252525;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #333;
+}
+
+.custom-table td {
+  border-color: #444;
+}
+
+/* Custom button styles */
+.custom-btn {
+  background-color: transparent;
+  color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+.custom-btn:hover {
+  background-color: #ff8c00;
+  color: #000;
+  border-color: #ff8c00;
+}
+
+/* Modal styles */
+.custom-modal .modal-content {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+.modal-header {
+  background-color: #222;
+  color: #ff8c00;
+  border-bottom: 1px solid #444;
+}
+
+.modal-header .close {
+  color: #ff8c00;
+}
+
+.modal-body {
+  background-color: #1e1e1e;
+}
+
+.modal-footer {
+  background-color: #222;
+  border-top: 1px solid #444;
+}
+
+/* Form styles */
+.custom-select {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+.custom-select:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 0 0.25rem rgba(255, 140, 0, 0.25);
+}
+
+/* Badge styles */
+.custom-badge {
+  font-weight: normal;
+}
+
+/* Button styles */
+.update-btn {
+  background-color: #ff8c00;
+  color: #000;
+  border-color: #ff8c00;
+}
+
+.update-btn:hover:not(:disabled) {
+  background-color: #e67e00;
+  color: #000;
+  border-color: #e67e00;
+}
+
+.update-btn:disabled {
+  background-color: #996633;
+  border-color: #996633;
+  color: #666;
+}
+
+.cancel-btn {
+  background-color: #444;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+.cancel-btn:hover {
+  background-color: #555;
+  color: #f0f0f0;
+  border-color: #666;
+}
+
+/* Spinner styles */
+.loading-spinner {
+  color: #f0f0f0;
+}
+
+.orange-spinner {
+  color: #ff8c00;
+}
+
+/* Override bootstrap default focus styles */
+.btn:focus, .form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 140, 0, 0.25);
+}
+
+/* Status badges custom colors */
+.badge.bg-success {
+  background-color: #28a745 !important;
+}
+
+.badge.bg-primary {
+  background-color: #ff8c00 !important;
+  color: #000;
+}
+
+.badge.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+.badge.bg-warning {
+  background-color: #ffc107 !important;
+  color: #000;
+}
+
+.badge.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.badge.bg-secondary {
+  background-color: #6c757d !important;
+}

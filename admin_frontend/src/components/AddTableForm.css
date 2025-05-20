@@ -1,0 +1,185 @@
+* AddTableForm.css */
+
+/* Main container styling */
+.table-form-container {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form header styling */
+.form-header {
+  background: linear-gradient(135deg, #4568dc, #3867d6);
+  padding: 25px 30px;
+  color: white;
+}
+
+.form-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Form styling */
+.table-form {
+  padding: 30px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+  font-size: 15px;
+}
+
+/* Input fields styling */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4568dc;
+  box-shadow: 0 0 0 3px rgba(69, 104, 220, 0.2);
+  background-color: #ffffff;
+}
+
+/* Custom file input styling */
+.file-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input-label {
+  display: inline-block;
+  background-color: #3867d6;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.file-input-label:hover {
+  background-color: #2d5ac7;
+}
+
+.file-count {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.file-hint {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* Submit button styling */
+.submit-button {
+  background: linear-gradient(135deg, #4568dc, #3867d6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(69, 104, 220, 0.4);
+}
+
+.submit-button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(69, 104, 220, 0.3);
+}
+
+.submit-button.submitting {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+/* Message box styling */
+.message-box {
+  margin: 10px 30px 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.message-box.success {
+  background-color: #e6f7ef;
+  border: 1px solid #bcebd3;
+  color: #05603a;
+}
+
+.message-box.error {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  color: #b91c1c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .table-form-container {
+    max-width: 100%;
+    margin: 15px;
+    border-radius: 8px;
+  }
+  
+  .form-header {
+    padding: 20px;
+  }
+  
+  .form-header h2 {
+    font-size: 22px;
+  }
+  
+  .table-form {
+    padding: 20px;
+  }
+}
